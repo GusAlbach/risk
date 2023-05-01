@@ -282,7 +282,6 @@ class Board(object):
                 return D[current_t]
             i = risk.definitions.territory_neighbors[current_t]
             for a in i:
-                # a is territory
                 if (self.owner(a) != start_id) and a not in visited:
                     copy_D = D[current_t].copy()
                     copy_D.append(a)
